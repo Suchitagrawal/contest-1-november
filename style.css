@@ -5,9 +5,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    /* overflow: hidden; */
     /* font-family: 'Montserrat', sans-serif; */
     /* background-color: black; */
     /* color: white; */
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 /* nav-bar */
@@ -49,9 +54,9 @@ ul{
 /* hero section */
 #hero-section{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* flex-wrap: wrap; */
-    padding: 2rem;
+    padding: 3.5rem;
     background-color: black;
     color: white;
     width: 100vw;
@@ -60,7 +65,7 @@ ul{
 .hero-section-1{
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: space-evenly;
    width: 50%;
 }
 
@@ -113,6 +118,9 @@ input{
     border-radius: 25px;
 }
 
+input[id=mobile-number],input[id=city]{
+    width: 46%;
+}
 
 ::placeholder{
   color:#fcaf02;
@@ -124,10 +132,13 @@ input{
     background-color: #fcaf02;
     font-weight: bolder;
     height: 2.8rem;
-    width: 10rem;
+    width: 11rem;
     font-size: 17px;
     border-radius: 25px;
-    margin: 1rem;
+    margin: 2rem;
+}
+
+.form-btn{
     text-align: center;
 }
 
@@ -156,13 +167,17 @@ tfoot{
     background-color: #fcaf02;
 }
 
+tfoot tr td{
+    border-right: 2px solid black;
+}
+
 thead tr{
     border-bottom: 2px solid #fcaf02;
 }
 
 th,td{
     padding: 1rem;
-    border-right: 2px solid #fcaf02;;
+    border-right: 2px solid #fcaf02;
 }
 
 
